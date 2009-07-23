@@ -10,6 +10,10 @@ require 'rtf'
 require 'rtf/utf8'
 require 'rtf/hyperlink'
 
+# My fix to RTF::FontTable#to_rtf
+#
+require 'rtf/utf8_fix'
+
 require 'rtfto/action_controller'
 require 'rtfto/action_view'
 
