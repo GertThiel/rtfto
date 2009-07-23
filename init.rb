@@ -1,7 +1,6 @@
-require 'prawnto'
+require 'rtfto'
 
-Mime::Type.register "application/pdf", :pdf
-ActionView::Template.register_template_handler 'prawn', Prawnto::TemplateHandlers::Base
-ActionView::Template.register_template_handler 'prawn_dsl', Prawnto::TemplateHandlers::Dsl
-ActionView::Template.register_template_handler 'prawn_xxx', Prawnto::TemplateHandlers::Raw  
+Mime::Type.register "application/rtf", :rtf
 
+ActionView::Template.register_template_handler( :rtfto,     Rtfto::TemplateHandlers::Base )
+ActionView::Template.register_template_handler( :rtfto_dsl, Rtfto::TemplateHandlers::Dsl  )

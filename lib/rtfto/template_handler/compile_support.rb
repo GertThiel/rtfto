@@ -1,4 +1,4 @@
-module Prawnto
+module Rtfto
   module TemplateHandler
 
     class CompileSupport
@@ -13,7 +13,7 @@ module Prawnto
       end
 
       def pull_options
-        @controller.send :compute_prawnto_options || {}
+        @controller.send :compute_rtfto_options || {}
       end
 
       def set_headers
